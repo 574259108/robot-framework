@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20191108 21:22:58.726" rpa="false">
+<suite id="s1" name="Work" source="C:\Users\aumse25\Desktop\robot\indeed\work.robot">
+<test id="s1-t1" name="check">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191108 21:22:59.215" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20191108 21:22:59.214" endtime="20191108 21:23:01.639"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_shop}</arg>
+</arguments>
+<msg timestamp="20191108 21:23:01.653" level="INFO">Opening url 'https://th.indeed.com/'</msg>
+<status status="PASS" starttime="20191108 21:23:01.652" endtime="20191108 21:23:03.131"></status>
+</kw>
+<kw name="Input Item name">
+<arguments>
+<arg>${add_wo}</arg>
+<arg>${input_wo}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_item}</arg>
+</arguments>
+<status status="PASS" starttime="20191108 21:23:03.134" endtime="20191108 21:23:03.197"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_item}</arg>
+<arg>${add_wo}</arg>
+</arguments>
+<msg timestamp="20191108 21:23:03.198" level="INFO">Typing text 'Selenium' into text field '//*[@id="text-input-what"]'.</msg>
+<status status="PASS" starttime="20191108 21:23:03.197" endtime="20191108 21:23:03.725"></status>
+</kw>
+<status status="PASS" starttime="20191108 21:23:03.133" endtime="20191108 21:23:03.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:08.727" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:03.726" endtime="20191108 21:23:08.727"></status>
+</kw>
+<kw name="Click Button Click text">
+<arguments>
+<arg>${Click_text}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Click_text}</arg>
+</arguments>
+<status status="PASS" starttime="20191108 21:23:08.729" endtime="20191108 21:23:08.781"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Click_text}</arg>
+</arguments>
+<msg timestamp="20191108 21:23:08.782" level="INFO">Clicking element '//*[@id="text-input-where"]'.</msg>
+<status status="PASS" starttime="20191108 21:23:08.781" endtime="20191108 21:23:08.893"></status>
+</kw>
+<status status="PASS" starttime="20191108 21:23:08.728" endtime="20191108 21:23:08.893"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:13.895" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:08.894" endtime="20191108 21:23:13.895"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="text-input-where"]</arg>
+</arguments>
+<status status="PASS" starttime="20191108 21:23:13.896" endtime="20191108 21:23:13.961"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:18.963" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:13.962" endtime="20191108 21:23:18.963"></status>
+</kw>
+<kw name="Input Item name">
+<arguments>
+<arg>${add_lo}</arg>
+<arg>${input_lo}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_item}</arg>
+</arguments>
+<status status="PASS" starttime="20191108 21:23:18.964" endtime="20191108 21:23:18.995"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${xpath_item}</arg>
+<arg>${add_wo}</arg>
+</arguments>
+<msg timestamp="20191108 21:23:18.996" level="INFO">Typing text 'กรุงเทพมหานคร' into text field '//*[@id="text-input-where"]'.</msg>
+<status status="PASS" starttime="20191108 21:23:18.996" endtime="20191108 21:23:19.325"></status>
+</kw>
+<status status="PASS" starttime="20191108 21:23:18.963" endtime="20191108 21:23:19.325"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:24.327" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:19.326" endtime="20191108 21:23:24.327"></status>
+</kw>
+<kw name="Click Button go">
+<arguments>
+<arg>${go}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${go}</arg>
+</arguments>
+<status status="PASS" starttime="20191108 21:23:24.335" endtime="20191108 21:23:24.372"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${go}</arg>
+</arguments>
+<msg timestamp="20191108 21:23:24.373" level="INFO">Clicking element '//*[@class="icl-Button icl-Button--primary icl-Button--md icl-WhatWhere-button"]'.</msg>
+<status status="PASS" starttime="20191108 21:23:24.373" endtime="20191108 21:23:25.409"></status>
+</kw>
+<status status="PASS" starttime="20191108 21:23:24.334" endtime="20191108 21:23:25.410"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:30.411" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:25.410" endtime="20191108 21:23:30.412"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20191108 21:23:35.414" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191108 21:23:30.413" endtime="20191108 21:23:35.414"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191108 21:23:35.415" endtime="20191108 21:23:37.720"></status>
+</kw>
+<tags>
+<tag>success</tag>
+</tags>
+<status status="PASS" starttime="20191108 21:22:59.213" endtime="20191108 21:23:37.721" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191108 21:23:37.724" endtime="20191108 21:23:37.725"></status>
+</kw>
+<status status="PASS" starttime="20191108 21:22:58.732" endtime="20191108 21:23:37.725"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">success</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Work">Work</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
